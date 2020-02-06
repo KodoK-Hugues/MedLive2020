@@ -1,0 +1,50 @@
+h4 {
+  font-weight: 700;
+  text-align: center !important;
+}
+
+.container h1{
+  font-weight: 900 !important;
+  color: red;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+}
+
+.container h3{
+  font-weight: 900 !important;
+}
+
+.container h5{
+  font-weight: 700 !important;
+  text-decoration-line: underline;
+}
+.container p{
+  font-weight: bolder;
+}
+
+.container ul{
+  padding-inline-start: 0px !important;
+}
+
+.register-form .custom-form .submit-button{
+  border-radius: 25 px;
+}
+.projects-clean .item .description{
+  font-size: 12px !important;
+}
+.projects-clean .item {
+  min-height:0 !important;
+  padding-bottom:20px !important;
+  padding-top:20px !important;
+}
+.alert-danger {
+  margin-bottom: 0;
+}
+.alert-success {
+  margin-top: 0;
+}
+
+#page-top > div.container > div {
+  margin-top: 50px;
+}
