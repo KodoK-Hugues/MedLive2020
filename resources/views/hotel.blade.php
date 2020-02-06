@@ -5,8 +5,7 @@
 
 <div class="container d-flex flex-column justify-content-center align-items-center text-center">
     <div class="titre">
-        <h3 style="color:darkgrey;">Hôtels à proximité proposés par</h3>
-          <img src="./assets/img/tripadvisor.svg" width="200px" alt="logo tripadvisor">
+        <h3 style="color:darkgrey;">Hôtels à proximité proposés par :</h3> <img src="./assets/img/tripadvisor.svg" width="200px" alt="logo tripadvisor">
     </div>
     <br>
 
@@ -15,12 +14,14 @@
 
   <ul>
       <li>
-        <h3 style="color:red;">{{ $data['name'] }}</h3>
-        <figure class="figure">
-            <a href="{{ $data['web_url']}}"target="_blank"><img src="{{ $data['photo']['images']['medium']['url']}}"  class="figure-img img-fluid rounded" alt="{{ $data['photo']['caption']}}"></a>
-            <h6 style=color:darkgrey;font-weight:900;>Description</h6>
-            <figcaption class="figure-caption">{{ $data['description'] }}</figcaption>
-        </figure>
+        <div class="card" style="width: 50rem;">
+          <img src="{{ $data['photo']['images']['medium']['url']}}" class="card-img-top" alt="{{ $data['photo']['caption']}}">
+          <div class="card-body">
+            <h5 class="card-title text-secondary">{{ $data['name'] }}</h5>
+            <p class="card-text text-secondary">{{ $data['description'] }}</p>
+            <a href="{{ $data['web_url']}}" class="btn btn-primary">Discover</a>
+          </div>
+        </div>
       </li>
   </ul>
 </div>
