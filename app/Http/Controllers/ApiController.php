@@ -10,7 +10,7 @@ class ApiController extends Controller
     public function index()
     {
 			$client = new Client();
-			$response = $client->request('GET','https://tripadvisor1.p.rapidapi.com/hotels/get-details?adults=2&nights=2&currency=EUR&lang=fr_FR&child_rm_ages=7%252C10&checkin=2020-01-20&location_id=187147',[
+			$response = $client->request('GET','https://tripadvisor1.p.rapidapi.com/hotels/get-details?adults=2&nights=2&currency=EUR&lang=fr_FR&child_rm_ages=7%252C10&checkin=2020-06-20&location_id=187147',[
       "headers" => [
         "X-RapidAPI-Host"=>env("ApiHost"),
         "X-RapidAPI-Key"=>env("ApiKey")]
